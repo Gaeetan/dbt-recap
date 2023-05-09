@@ -8,6 +8,6 @@ SELECT
     ,order_delivered_customer_date
     ,order_estimated_delivery_date
 
-FROM data_analytics_olist.orders
+FROM {{ source('data_analytics_olist','orders') }}
 
 WHERE order_status = 'delivered'

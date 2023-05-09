@@ -1,7 +1,7 @@
 
 SELECT
     customers.customer_city
-    ,count(*)
+    ,count(*) AS order_count
 
 FROM {{ ref('late_delivered_orders') }} AS orders
 

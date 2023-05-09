@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: data_analytics_olist
+    schema: data_analytics_olist
     tables:
       - name: orders
       - name: customers

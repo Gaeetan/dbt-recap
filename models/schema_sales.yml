@@ -6,6 +6,9 @@ models:
 
     columns:
       - name: order_id
+        tests:
+          - unique
+          - not_null
       - name: customer_id
       - name: order_purchase_timestamp
         description: "That's the date provided by the website at the time the customer checks out"

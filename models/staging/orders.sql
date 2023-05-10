@@ -1,7 +1,7 @@
 
 SELECT
     order_id
-    ,customer_id
+    ,customer_id AS customer_id
     ,{{ process_cost('customer_id') }} AS customer_cost
     ,order_purchase_timestamp
     ,order_approved_at
@@ -10,5 +10,3 @@ SELECT
     ,order_estimated_delivery_date
 
 FROM {{ source('data_analytics_olist','orders') }}
-
-WHERE order_status = 'delivered'

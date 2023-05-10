@@ -1,9 +1,8 @@
 version: 2
 
 models:
-  - name: delivered_orders
+  - name: int_delivered_orders
     description: markdown_string
-
     columns:
       - name: order_id
         tests:

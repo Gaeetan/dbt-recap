@@ -1,6 +1,9 @@
 version: 2
 
 models:
+  - name: stg_orders
+  - name: int_late_delivered_orders
+  - name: mart_late_orders_per_city
   - name: int_delivered_orders
     description: markdown_string
     columns:

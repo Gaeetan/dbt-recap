@@ -40,6 +40,4 @@ models:
     intermediate:
       schema: _intermediate
     mart:
-      marketing:
-        schema: marketing_mart
       schema: _mart

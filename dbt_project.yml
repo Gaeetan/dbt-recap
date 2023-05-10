@@ -35,3 +35,11 @@ models:
   my_new_project:
     # Applies to all files under models/example/
     materialized: view
+    staging:
+      schema: _staging
+    intermediate:
+      schema: _intermediate
+    mart:
+      marketing:
+        schema: marketing_mart
+      schema: _mart

@@ -3,6 +3,14 @@ version: 2
 sources:
   - name: data_analytics_olist
     schema: data_analytics_olist
+    description: "olist dataset"
     tables:
       - name: orders
+        description: "List of customer orders"
+      - name: geolocation
+        description: "Geoloc of customers"
       - name: customers
+        description: "List of customers"
+        columns:
+          - name: customer_id
+            description: primary key

@@ -9,6 +9,6 @@ SELECT
     ,order_delivered_customer_date
     ,order_estimated_delivery_date
 
-FROM {{ ref('stg_orders') }}
+FROM {{ ref('stg_olist__orders') }}
 
 WHERE order_status = 'delivered'

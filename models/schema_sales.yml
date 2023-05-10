@@ -2,6 +2,11 @@ version: 2
 
 models:
   - name: stg_orders
+    tests:
+      - dbt_utils.recency:
+          datepart: day
+          field: order_purchase_timestamp
+          interval: 2000
   - name: int_late_delivered_orders
   - name: mart_late_orders_per_city
   - name: int_delivered_orders
